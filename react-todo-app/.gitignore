@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 環境変数
+.env
+.env.*
+
+# OS固有ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ビルド成果物
+dist/
+build/
+out/
+
+# テストカバレッジ
+coverage/
+
+# ログ
+logs/
+*.log
+
+# その他
+*.local
