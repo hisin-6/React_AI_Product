@@ -9,6 +9,7 @@ yarn-error.log*
 # 環境変数
 .env
 .env.*
+deploy.env
 
 # OS固有ファイル
 .DS_Store
