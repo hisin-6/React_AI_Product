@@ -21,6 +21,7 @@ npm install
 
 # プロダクションビルドを作成
 echo "🔨 プロダクションビルドを作成中..."
+rm -rf build  # 既存のbuildディレクトリを削除
 npm run build
 
 # Nginx設定ファイルをコピー（オプション - 既存設定がある場合はスキップ）
@@ -51,3 +52,5 @@ echo "🌐 HTTPSでアクセス: https://${SERVER_IP}/"
 echo "🌐 HTTPでアクセス: http://${SERVER_IP}/ (HTTPSにリダイレクトされます)"
 echo "📝 注意: 既存のNginx設定と競合する可能性があります。"
 echo "    必要に応じてNginx設定を手動で調整してください。"
+echo "🕐 デプロイ時刻: $(date)"
+echo "💡 ブラウザでCtrl+F5 (ハードリフレッシュ) を実行してキャッシュをクリアしてください"
